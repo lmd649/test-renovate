@@ -1,0 +1,9 @@
+# version updates は無効化し、security updates 専用にする
+# (open-pull-requests-limit: 0 は「security だけ欲しい場合」の公式推奨設定)
+version: 2
+updates:
+  - package-ecosystem: "uv"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 0
